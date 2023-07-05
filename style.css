@@ -461,7 +461,8 @@ line-height: 1.2;
     height: 6px;
     background: var(--bg-color);
     margin: 4rem auto;
-    border: solid 7px var(--shadow-color);
+    /* border: solid 7px var(--shadow-color); */
+    border: solid 7px rgb(207 200 200 / 70%);
     border-radius: 50%;
     /* margin-top: 40px; */
     margin-top: 7rem;
@@ -471,15 +472,18 @@ line-height: 1.2;
 
 #experience-progressBar-containe li:hover:after {
 	background:#555;
+    /* background: var(--main-color); */
 }
 
 #experience-progressBar-container li.active:after{
     background: var(--main-color);
+    border-color: var(--main-color);
 }
 #experience-progressBar-container #line{
     width: 80%;
     margin: 2rem auto;
-    background: var(--shadow-color);
+    /* background: var(--shadow-color); */
+    background: rgb(207 200 200 / 70%);
     height: 6px;
     position: absolute;
     left: 10%;
@@ -496,7 +500,7 @@ line-height: 1.2;
     width: 3%;
     height: 100%;
     background: var(--main-color);
-    background: linear-gradient(to right,var(--shadow-color)0%,var(--main-color) 100%);
+    background: linear-gradient(to right,rgba(131, 4, 250, 0.7) 0%, var(--main-color) 100%);
     position: absolute;
     z-index: 2;
     border-radius: 50px;
