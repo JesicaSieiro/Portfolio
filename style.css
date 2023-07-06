@@ -1517,7 +1517,7 @@ line-height: 1.2;
     .navbar.active{
         display: block;
         padding-left: 2rem;
-}
+
     }
     .navbar a{
         display: block;
