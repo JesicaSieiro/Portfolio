@@ -842,7 +842,7 @@ section{
 
 .home .profession-container {
     position: absolute;
-    top: 35%;
+    top: 40%;
     right: 0rem;
     transform: translateY(-50%);
     width: 768px;
@@ -950,7 +950,8 @@ section{
     position: absolute;
     /* top: 35%; */
     right: 5%;
-    width: 25vw;
+    /* width: 25vw; */
+    width: 30vw;
     pointer-events: none;
     border-radius: 45%;
 }
@@ -1348,25 +1349,42 @@ line-height: 1.2;
     color: #333;
 }
 }
-@media(max-width:1360px){
+/* @media(max-width:1300px){
 
-    .home .profession-container{
-        height: 85.8rem;
-        top:70%
+    section{
+        min-height: 100vh;
     }
-    /* .home .profession-container {
+    .home .profession-container{
+        
+        top:100%
+    }
+
+    .home .home-content {
+        max-width: 40rem;
+    }
+    .home .profession-container .profession-box{
+        right:-12rem ;
+        height: 85.8rem;
+    }
+
+    .home .profession-container .overlay{
+        right: -9rem;
+    }
+    #experience-progressBar-container #line {
+        
+        top: 11.5rem;
+    }
+    .home-img img {
         position: absolute;
-        top: 35%;
-        right: 0rem;
-        transform: translateY(-50%);
-        width: 768px;
-        height: 768px;
-        overflow: hidden;
+        
+        right: 1%;
+        width: 38vw;
         pointer-events: none;
-    } */
-}
+        border-radius: 45%;
+    }
+} */
 /* Responsive */
-@media(max-width:1200px){
+@media(max-width:1370px){
     html{
         font-size: 55%;
     }
@@ -1405,9 +1423,9 @@ line-height: 1.2;
     }
     .home-img img {
         position: absolute;
-        top: 25%;
+        top: 20%;
         right: 1%;
-        width: 38vw;
+        width: 25vw;
         pointer-events: none;
         border-radius: 45%;
     }
@@ -1426,7 +1444,14 @@ line-height: 1.2;
     .home .profession-container .overlay{
         right: -15rem;
     }
-    
+    .home-img img {
+        position: absolute;
+        top: 20%;
+        right: 1%;
+        width: 35vw;
+        pointer-events: none;
+        border-radius: 45%;
+    }
 }
 
 @media (max-width: 991px){
