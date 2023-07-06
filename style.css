@@ -53,7 +53,8 @@ body{
     box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
 .logo{
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: 3.5rem;
     color: var(--main-color);
     font-weight: 600;
     cursor: default;
@@ -62,13 +63,16 @@ body{
 
 .navbar a{
     position: relative;
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
+    font-size: 3rem;
     color:var(--white-color);
     font-weight: 500;
     margin-right: 3.5rem;
 }
 
-.navbar a:nth-child(1)
+.navbar a:nth-child(1),
+.navbar a:nth-child(2),
+.navbar a:nth-child(3)
 {
   color: var(--text-color);
 }
@@ -309,7 +313,7 @@ span{
     margin: 0 5vw;
 }
 .heading{
-    font-size: 4.5rem;
+    font-size: 6rem;
     text-align: center;
 }
 .about-content h2{
@@ -451,7 +455,7 @@ line-height: 1.2;
     text-align: center;
     color: var(--text-color);
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 2rem;
     cursor: pointer;
     font-weight: 600;
     transition: all ease .2s;
@@ -499,7 +503,7 @@ line-height: 1.2;
     border-color: var(--main-color);
 }
 #experience-progressBar-container #line{
-    width: 80%;
+    width: 85%;
     margin: 2rem auto;
     /* background: var(--shadow-color); */
     background: rgb(207 200 200 / 70%);
@@ -527,7 +531,7 @@ line-height: 1.2;
 }
 
 #experience-progress-content-section{
-    width: 90%;
+    width: 80%;
     /* margin: auto; */
     margin: 7rem auto;
     background: var(--bg-color);
@@ -542,14 +546,14 @@ line-height: 1.2;
 
 }
 #experience-progress-content-section .experience-section-content h2{
-    font-size:17px;
+    font-size:3rem;
 	text-transform:uppercase;
 	color:var(--text-color);
 	letter-spacing:1px;
 }
 
 #experience-progress-content-section .experience-section-content p{
-    font-size:16px;
+    font-size:2rem;
 	line-height:1.8em;
 	color:var(--text-color);
 }
@@ -728,7 +732,9 @@ line-height: 1.2;
     font-weight: 500;
     margin-right: 3.5rem;
 }
-.navbar a:nth-child(1){
+.navbar a:nth-child(1),
+.navbar a:nth-child(2),
+.navbar a:nth-child(3){
     color: var(--white-color);
 }
 .header.sticky .navbar a{
@@ -1500,7 +1506,8 @@ line-height: 1.2;
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 3%;
+        /* padding: 1rem 3% */;
+        padding: 1rem 0;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -1682,6 +1689,7 @@ line-height: 1.2;
         /* height: 85.8rem; */
         /* top: 70%; */
         top: 100%;
+        width: 108%;
     }
     .home .profession-box .profession:nth-child(1){
         transform: rotate(-120deg) translate(-165px,-240px);
