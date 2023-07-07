@@ -202,11 +202,11 @@ section{
 } */
 .home .profession-container {
     position: absolute;
-    top: 55%;
+    top: 67%;
     right: 0rem;
     transform: translateY(-50%);
-    width: 1768px;
-    height: 1768px;
+    width: 2068px;
+    height: 2068px;
     overflow: hidden;
     pointer-events: none;
 }
@@ -322,6 +322,7 @@ span{
     justify-content: center;
     align-items: center;
     gap:1rem 3rem;
+    margin-top: 4rem;
 }
 .about-img img{
     width: 25vw;
