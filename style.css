@@ -166,6 +166,7 @@ section{
 .home-content .social-media a:hover{ 
     background: var(--main-color);
     color: var(--white-color);
+    
 }
 
 .btn{
