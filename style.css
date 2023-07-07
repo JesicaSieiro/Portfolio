@@ -62,13 +62,13 @@ body{
     margin-right: auto;
 }
 
-.navbar a{
+.navbar a {
     position: relative;
     /* font-size: 1.7rem; */
-    font-size: 4rem;
-    color:var(--white-color);
+    font-size: 3.9rem;
+    color: var(--white-color);
     font-weight: 500;
-    margin-right: 3.5rem;
+    margin-right: 3rem;
 }
 
 /* .navbar a:nth-child(1),
@@ -166,7 +166,7 @@ section{
 .home-content .social-media a:hover{ 
     background: var(--main-color);
     color: var(--white-color);
-    
+
 }
 
 .btn{
