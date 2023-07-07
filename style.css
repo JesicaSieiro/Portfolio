@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -21,7 +21,8 @@
 }
 
 .dark-mode{
-    --bg-color:#0b061f;
+    /* --bg-color:#0b061f; */
+    --bg-color:#3a3a3b;
     --text-color:#fdfdfd;
     --shadow-color:rgba(0,0,0,.7);    
 }
@@ -54,7 +55,7 @@ body{
 }
 .logo{
     /* font-size: 2.5rem; */
-    font-size: 3.5rem;
+    font-size: 6rem;
     color: var(--main-color);
     font-weight: 600;
     cursor: default;
@@ -64,18 +65,18 @@ body{
 .navbar a{
     position: relative;
     /* font-size: 1.7rem; */
-    font-size: 3rem;
+    font-size: 4rem;
     color:var(--white-color);
     font-weight: 500;
     margin-right: 3.5rem;
 }
 
-.navbar a:nth-child(1),
+/* .navbar a:nth-child(1),
 .navbar a:nth-child(2),
 .navbar a:nth-child(3)
 {
   color: var(--text-color);
-}
+} */
 
 .header.sticky .navbar a{
     color: var(--text-color);
@@ -101,7 +102,7 @@ body{
 }
 
 #darkMode-icon{
-    font-size: 2.4rem;
+    font-size: 4rem;
     color: var(--white-color);
     cursor: pointer;
 }
@@ -116,7 +117,7 @@ body{
 }
 /* HOME SECTION */
 section{
-    min-height: 50vh;
+    min-height: 80vh;
     padding: 10rem 7% 2rem;
 }
 
@@ -127,37 +128,37 @@ section{
 
 .home .home-content{
     /* max-width: 44rem; */
-    max-width: 70rem;
+    max-width: 80rem;
 }
 
 .home-content h3{
-    font-size: 3.2rem;
+    font-size: 6rem;
     font-weight: 700;
     line-height: 0.3;
 }
 
 .home-content h1{
-    font-size: 5.6rem;
+    font-size: 8rem;
     font-weight: 700;
     margin-bottom: .3rem;
 }
 
 .home-content p{
     /* font-size: 1.6rem; */
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .home-content .social-media a{ 
      display: inline-flex;
      justify-content: center;
      align-items: center;
-     width: 4rem;
-     height: 4rem;
+     width: 7rem;
+     height: 7rem;
      background: transparent;
      border: .2rem solid var(--main-color);
      border-radius: 50%;
      box-shadow: 0.2rem .5rem var(--shadow-color) ;
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: var(--main-color);
     margin: 2.5rem 1.5rem;
     transition: .5s ease;
@@ -174,7 +175,7 @@ section{
     background: var(--main-color);
     border-radius: .6rem;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
-    font-size: 1.6rem;
+    font-size: 3.5rem;
     color: var(--white-color);
     letter-spacing: .1rem;
     font-weight: 600;
@@ -188,17 +189,8 @@ section{
     border-color: var(--main-color);
 }
 
-/* .home .profession-container{
-    position: absolute;
-    top:50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 768px;
-    height: 768px;
-    overflow: hidden;
-    pointer-events: none;
-} */
-.home .profession-container {
+
+/* .home .profession-container {
     position: absolute;
     top: 22%;
     right: 0rem;
@@ -207,14 +199,25 @@ section{
     height: 768px;
     overflow: hidden;
     pointer-events: none;
+} */
+.home .profession-container {
+    position: absolute;
+    top: 55%;
+    right: 0rem;
+    transform: translateY(-50%);
+    width: 1768px;
+    height: 1768px;
+    overflow: hidden;
+    pointer-events: none;
 }
 .home .profession-container .profession-box{
     position: absolute;
     top:0;
     right: 0;
-    width: 768px;
-    height: 768px;
-    /* background: yellowgreen; */
+    /* width: 768px;
+    height: 768px; */
+    width: 1368px;
+    height: 1368px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -244,7 +247,7 @@ section{
     flex-direction: column;
     color: var(--main-color);
     transform: rotate(calc( 360deg / 3 * var(--i)));
-    transform-origin: 384px;
+    transform-origin: 654px;
     background: var(--bg-color);
     padding: 13px 0;
 }
@@ -256,22 +259,24 @@ section{
     padding-bottom: 20px;
 }
 .home .profession i{
-    font-size: 3.8rem;
+    font-size: 4.8rem;
 }
 .home .profession h3{
-    font-size: 3.2rem;
+    font-size: 4.5rem;
     line-height: 1;
     font-weight: 600;
 }
 .home .profession-box .circle{
-    width: 560px;
-    height: 560px;
+    /* width: 560px;
+    height: 560px; */
+    width: 1060px;
+    height: 1060px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
 
 }
 
-.home .profession-container .overlay{
+/* .home .profession-container .overlay{
     position: absolute;
     top: 0;
     right: 0;
@@ -281,19 +286,29 @@ section{
     border-right: 384px solid var(--main-color);
     border-bottom: 384px solid var(--main-color);
     border-left: 384px solid transparent;
+} */
+.home .profession-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 684px solid var(--main-color);
+    border-right: 684px solid var(--main-color);
+    border-bottom: 684px solid var(--main-color);
+    border-left: 684px solid transparent;
 }
-
 .home-img{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home-img img{
+.home-img img {
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 5%;
-    width: 15vw;
+    width: 30vw;
     pointer-events: none;
     border-radius: 45%;
 }
@@ -323,12 +338,8 @@ line-height: 1.2;
 .about-content h3{
     font-size: 2rem;
 }
-/* .about-content p{
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-} */
 .about-content p {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 2rem 0 3rem;
 }
 /* Studies */
@@ -345,22 +356,22 @@ line-height: 1.2;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
 }
-.studies-container .studies-box{
-    flex:1 1 30rem ;
+.studies-container .studies-box {
+    flex: 1 1 30rem;
     /* max-width: 39rem; */
-    min-width: 50rem;
-    max-width: 50rem;
-    height: 52rem;
+    min-width: 70rem;
+    max-width: 75rem;
+    height: 85rem;
     overflow-y: scroll;
     background: var(--bg-color);
     padding: 2rem 2rem 4rem;
     border-radius: 1rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
     text-align: center;
-    border-top: .6rem solid var(--main-color);
-    border-bottom: .6rem solid var(--main-color);
+    border-top: 0.6rem solid var(--main-color);
+    border-bottom: 0.6rem solid var(--main-color);
     transition: .5s ease;
     justify-content: space-evenly;
 }
@@ -394,7 +405,7 @@ line-height: 1.2;
 }
 
 .studies-box h3{
-    font-size: 3rem;
+    font-size: 4rem;
     transition: .5s ease;
 }
 
@@ -403,12 +414,12 @@ line-height: 1.2;
 }
 
 .studies-box p{
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 1rem 0 3rem;
 }
 
 .studies-box ul{
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 1rem 2rem 3rem;
     text-align: left;
 }
@@ -438,8 +449,8 @@ line-height: 1.2;
     content: "";
     display: block;
     margin: auto;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: solid 2px var(--shadow-color);
     transition: all ease 0.3s;
@@ -455,7 +466,7 @@ line-height: 1.2;
     text-align: center;
     color: var(--text-color);
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     font-weight: 600;
     transition: all ease .2s;
@@ -469,7 +480,7 @@ line-height: 1.2;
     width: 100%;
     bottom: 0;
     /* font-size: 14px; */
-    margin: -3rem auto;
+    margin: -15rem auto;
 }
 
 #experience-progressBar-container li.active,
@@ -480,15 +491,15 @@ line-height: 1.2;
 #experience-progressBar-container li:after{
     content: "";
     display: block;
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     background: var(--bg-color);
-    margin: 4rem auto;
+    margin: 5rem auto;
     /* border: solid 7px var(--shadow-color); */
-    border: solid 7px rgb(207 200 200 / 70%);
-    border-radius: 50%;
+    border: solid 15px rgb(207 200 200 / 70%);
+    border-radius: 70%;
     /* margin-top: 40px; */
-    margin-top: 7rem;
+    margin-top: 19rem;
     box-shadow: 0 2px 13px -1px var(--shadow-color);
     transition: all ease .2s;
 }
@@ -511,7 +522,7 @@ line-height: 1.2;
     position: absolute;
     left: 10%;
     /* top: 57px; */
-    top: 10.5rem;
+    top: 25rem;
     z-index: 1;
     border-radius: 50px;
     transition: all ease.9s;
@@ -533,7 +544,7 @@ line-height: 1.2;
 #experience-progress-content-section{
     width: 80%;
     /* margin: auto; */
-    margin: 7rem auto;
+    margin: 25rem auto;
     background: var(--bg-color);
     border-radius: 2rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
@@ -546,14 +557,14 @@ line-height: 1.2;
 
 }
 #experience-progress-content-section .experience-section-content h2{
-    font-size:3rem;
+    font-size:4rem;
 	text-transform:uppercase;
 	color:var(--text-color);
 	letter-spacing:1px;
 }
 
 #experience-progress-content-section .experience-section-content p{
-    font-size:2rem;
+    font-size:3rem;
 	line-height:1.8em;
 	color:var(--text-color);
 }
@@ -1009,7 +1020,8 @@ line-height: 1.2;
 }
 .studies-container .studies-box{
     flex:1 1 30rem ;
-    max-width: 39rem;
+    min-width: 35rem;
+    max-width: 40rem;
     height: 52rem;
     overflow-y: scroll;
     background: var(--bg-color);
@@ -1061,12 +1073,12 @@ line-height: 1.2;
 }
 
 .studies-box p{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin: 1rem 0 3rem;
 }
 
 .studies-box ul{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin: 1rem 2rem 3rem;
     text-align: left;
 }
@@ -1403,6 +1415,12 @@ line-height: 1.2;
         top:50%
     }
 
+    .home-content h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+    }
+
     .home .home-content {
         max-width: 40rem;
     }
@@ -1444,6 +1462,11 @@ line-height: 1.2;
     section{
         padding: 10rem 3% 2rem;
     }
+    .home-content h1 {
+        font-size: 5em;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+    }
     .home .profession-container .profession-box{
         right: -22rem;
     }
@@ -1461,6 +1484,12 @@ line-height: 1.2;
 }
 
 @media (max-width: 991px){
+
+    section {
+        padding: 20rem 3% 2rem;
+    }
+
+
     .navbar a:nth-child(1),
     .navbar a:nth-child(2)
     /* .navbar a:nth-child(3) */{
@@ -1473,8 +1502,71 @@ line-height: 1.2;
     .home .home-content{
         max-width: 50rem;
     }
+    .home .profession-container {
+        position: absolute;
+        top: 61%;
+        right: 0rem;
+        transform: translateY(-50%);
+        width: 768px;
+        height: 768px;
+        overflow: hidden;
+        pointer-events: none;
+    }
+    /* .home .profession-container {
+        position: absolute;
+        top: 22%;
+        right: 0rem;
+        transform: translateY(-50%);
+        width: 768px;
+        height: 768px;
+        overflow: hidden;
+        pointer-events: none;
+    } */
     .home .profession-container .profession-box{
-        right: -45rem;
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 768px;
+        height: 768px;
+        /* background: yellowgreen; */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation:professionRotate 13s ease-out infinite;
+    }
+    @keyframes professionRotate{
+        0%,30%{
+            transform:rotate(0deg)
+        }
+         35%,65%{
+            transform:rotate(-120deg)
+        }
+        70%,95%{
+            transform:rotate(-240deg)
+        }
+        100%{
+            transform:rotate(-360deg)
+        }
+    }
+    .home .profession-box .profession
+    {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: var(--main-color);
+        transform: rotate(calc( 360deg / 3 * var(--i)));
+        transform-origin: 384px;
+        background: var(--bg-color);
+        padding: 13px 0;
+    }
+
+
+
+    .home .profession-container .profession-box{
+        right: -35rem;
     }
     .home .profession-container .overlay{
         right: -39.5rem;
